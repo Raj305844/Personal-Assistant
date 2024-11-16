@@ -28,7 +28,7 @@ def processCommand(c):
 
         # Fetch latest news headlines using NewsAPI
 
-        r = requests.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=")  # This is link already provided when you for News API
+        r = requests.get("https://newsapi.org/v2/top-headlines")  # This is link already provided when you signIn in site for getting API
         if r.status_code == 200:
             
             data = r.json() # Parse response
